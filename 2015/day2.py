@@ -6,6 +6,9 @@ with open('day2_volume.txt') as f:
     for line in f:
 
         l, w, h = sorted(map(int, line.split('x')))
+        # sorting here just allows you to use l x w instead
+        # of finding the min in the extra variable
+
         wrap = (2 * l * w) + (2 * w * h) + (2 * h * l)
         extra = (l * w)
         paper = wrap + extra
