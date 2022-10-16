@@ -4,7 +4,7 @@ visited = [(0, 0)]  # the starting point
 x = y = 0
 count = 1
 
-with open("day3_spherical.txt") as f:
+with open("text_input/day3_spherical.txt") as f:
     for c in f.read().strip():
         match c:
             case '^':

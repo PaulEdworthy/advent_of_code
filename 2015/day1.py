@@ -1,6 +1,6 @@
 # Part 1
 
-with open('day1_parens.txt') as f:
+with open('text_input/day1_parens.txt') as f:
     buf = f.read()
 
 opening = buf.count('(')

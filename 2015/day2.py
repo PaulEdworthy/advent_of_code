@@ -1,6 +1,6 @@
 # Part 1
 
-with open('day2_volume.txt') as f:
+with open('text_input/day2_volume.txt') as f:
     total = 0
     total_extra = 0
     for line in f:
