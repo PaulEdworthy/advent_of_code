@@ -10,3 +10,4 @@ with open('day1.txt') as f:
     sp = buffer.split(', ')
     for d in sp:
         
+        print(d)
