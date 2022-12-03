@@ -1,78 +1,76 @@
 import aocd
+data = aocd.get_data(year=2022, day=2).split("\n")
 
+def first():
+    total = 0
 
-def part_one():
-    lines = aocd.get_data(year=2022, day=2).split("\n")
-    score = 0
-
-    for line in lines:
-        choices = line.split(" ")
-        match choices[1]:
+    for line in data:
+        choice = line.split(" ")
+        match choice[1]:
             case 'X':
-                score += 1
-                match choices[0]:
+                total += 1
+                match choice[0]:
                     case 'A':
-                        score += 3
+                        total += 3
                     case 'C':
-                        score += 6
+                        total += 6
             case 'Y':
-                score += 2
-                match choices[0]:
+                total += 2
+                match choice[0]:
                     case 'A':
-                        score += 6
+                        total += 6
                     case 'B':
-                        score += 3
+                        total += 3
             case 'Z':
-                score += 3
-                match choices[0]:
+                total += 3
+                match choice[0]:
                     case 'B':
-                        score += 6
+                        total += 6
                     case 'C':
-                        score += 3
+                        total += 3
 
-    return score
+    return total
 
 
-def part_two():
-    lines = aocd.get_data(year=2022, day=2).split("\n")
-    score = 0
+def second():
+    total = 0
 
-    for line in lines:
-        choices = line.split(" ")
-        match choices[1]:
+    for line in data:
+        choice = line.split(" ")
+        match choice[1]:
             case 'X':
-                match choices[0]:
+                match choice[0]:
                     case 'A':
-                        score += 3
+                        total += 3
                     case 'B':
-                        score += 1
+                        total += 1
                     case 'C':
-                        score += 2
+                        total += 2
             case 'Y':
-                score += 3
-                match choices[0]:
+                total += 3
+                match choice[0]:
                     case 'A':
-                        score += 1
+                        total += 1
                     case 'B':
-                        score += 2
+                        total += 2
                     case 'C':
-                        score += 3
+                        total += 3
             case 'Z':
-                score += 6
-                match choices[0]:
+                total += 6
+                match choice[0]:
                     case 'A':
-                        score += 2
+                        total += 2
                     case 'B':
-                        score += 3
+                        total += 3
                     case 'C':
-                        score += 1
+                        total += 1
 
-    return score
+    return total
 
 
 def main():
-    print(part_one())
-    print(part_two())
+    print(first())
+    print(second())
 
 
 if __name__ == '__main__':
