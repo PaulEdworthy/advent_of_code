@@ -1,3 +1,5 @@
 venv
+.env
 .idea
 test.txt
+__pycache__/
