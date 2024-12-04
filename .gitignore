@@ -3,3 +3,4 @@ venv
 .idea
 test.txt
 __pycache__/
+test.py
