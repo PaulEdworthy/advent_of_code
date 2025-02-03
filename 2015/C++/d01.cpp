@@ -8,7 +8,7 @@ int main() {
     std::ifstream infile(url);
     std::string data;
 
-    int part1(std::string data);
+    int floors(std::string data);
     
     if (!infile) {
         std::cerr << "File not found\n";
@@ -17,11 +17,11 @@ int main() {
         std::getline(infile, data);
     }
     infile.close();
-    std::cout << part1(data) << "\n";;
+    std::cout << floors(data) << "\n";;
     return 0;
 }
 
-int part1(std::string data) {
+int floors(std::string data) {
     int floor = 0;
     int basement = 0;
     bool isFalse = false;
