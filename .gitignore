@@ -4,5 +4,5 @@ venv
 test.txt
 __pycache__/
 test.py
-text_input/
+input/
 *.exe
