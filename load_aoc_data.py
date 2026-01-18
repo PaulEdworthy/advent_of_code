@@ -13,8 +13,8 @@ def get_aoc_input(year, day):
     return response.text.strip().split('\n') # strip whitespace and split into lines
 
     # or save the data to a file
-    # with open('aoc_data.txt', w) as f:
-    #     f.write(response.text)
+    with open('aoc_data.txt', w) as f:
+        f.write(response.text)
 
     if response.status_code == 200:
         print("Data downloaded successfully")
